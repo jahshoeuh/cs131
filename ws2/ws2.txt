@@ -1,0 +1,158 @@
+Script started on 2025-02-05 20:13:31+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="95" LINES="53"]
+
+START OF SCRIPT
+
+2.Found home dir path using the command "pwd". 
+
+booce_derpinson@instance-20250129-205434:~/cs131/ws2$ pwd 
+
+/home/booce_derpinson/cs131/ws2 
+
+3.Found my uid and groups using the command "id". UID is found uid=1001 and groups are listed
+after groups=10012 -> onwards.
+
+booce_derpinson@instance-20250129-205434: ~/cs131/ws2$ id 
+
+uid=1001(booce_derpinson) gid=1002(booce_derpinson) groups=1002(booce_derpinson),4(adm),20(dialout),24(cdrom),25(floppy),29(audio),30(dip),44(video),46(plugdev),118(netdev),119(lxd),1000(ubuntu),1001(google-sudoers)
+
+4.Looking for files in /proc/ containing memory info using ls /proc/ | grep mem.
+ 
+booce_derpinson@instance-20250129-205434:~/cs131/ws2 ls /proc/ | grep mem
+
+iomem
+meminfo
+
+4.Looking for files in /proc/ containing cpu info using ls /proc/ | grep cpu
+
+booce_derpinson@instance-20250129-205434: ~/cs131/ws2 proc/ | grep cpu
+
+cpuinfo
+
+5. Using head /proc/meminfo to find total memory. Showing 976896kB total.
+
+booce_derpinson@instance-20250129-205434: ~/cs131/ws2 head /proc/meminfo
+MemTotal:         976896 kB
+MemFree:          503588 kB
+MemAvailable:     658072 kB
+Buffers:           15828 kB
+Cached:           261368 kB
+SwapCached:            0 kB
+Active:           136256 kB
+Inactive:         199528 kB
+Active(anon):        900 kB
+Inactive(anon):    66844 kB
+
+6.Using head /proc/cpuinfo
+
+booce_derpinson@instance-20250129-205434: ~/cs131/ws2 head /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU @ 2.20GHz
+stepping	: 0
+microcode	: 0xffffffff
+cpu MHz		: 2199.998
+cache size	: 56320 KB
+physical id	: 0
+
+6. Using tail /proc/cpuinfo
+
+booce_derpinson@instance-20250129-205434: ~/cs131/ws2 tail /proc/cpuinfo
+
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single pti ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm rdseed adx smap xsaveopt arat md_clear arch_capabilities
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs taa mmio_stale_data retbleed bhi
+bogomips	: 4399.99
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+6. Using cat /proc/cpuinfo
+
+booce_derpinson@instance-20250129-205434: ~/cs131/ws2 cat /proc/cpuinfo
+
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU @ 2.20GHz
+stepping	: 0
+microcode	: 0xffffffff
+cpu MHz		: 2199.998
+cache size	: 56320 KB
+physical id	: 0
+siblings	: 2
+core id		: 0
+cpu cores	: 1
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single pti ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm rdseed adx smap xsaveopt arat md_clear arch_capabilities
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs taa mmio_stale_data retbleed bhi
+bogomips	: 4399.99
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU @ 2.20GHz
+stepping	: 0
+microcode	: 0xffffffff
+cpu MHz		: 2199.998
+cache size	: 56320 KB
+physical id	: 0
+siblings	: 2
+core id		: 0
+cpu cores	: 1
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single pti ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm rdseed adx smap xsaveopt arat md_clear arch_capabilities
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs taa mmio_stale_data retbleed bhi
+bogomips	: 4399.99
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+6.I have 2 processors on my server, the processor architecture name is Intel (R) XEON (R) CPU @ 2.20GHZ. My processor speed in MHz is 2199.998MHz and converted to GHz it's 2.2GHz.
+
+7.The operating system version is "20,04,6 LTS (Focal Fossa)" The file is contained in 
+/etc/*release.
+
+booce_derpinson@instance-20250129-205434:~/cs131/ws2 cat /etc/*release
+
+DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=20.04
+DISTRIB_CODENAME=focal
+DISTRIB_DESCRIPTION="Ubuntu 20.04.6 LTS"
+NAME="Ubuntu"
+VERSION="20.04.6 LTS (Focal Fossa)"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 20.04.6 LTS"
+VERSION_ID="20.04"
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+VERSION_CODENAME=focal
+UBUNTU_CODENAME=focal
+booce_derpinson@instance-20250129-205434: ~/cs131/ws2 exit
+
+END OF SCRIPT
+
+Script done on 2025-02-05 20:15:22+00:00 [COMMAND_EXIT_CODE="0"]

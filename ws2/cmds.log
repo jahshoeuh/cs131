@@ -1,0 +1,34 @@
+Start of commands  
+
+  412  mkdir ws2
+  413  cd ws2
+  (forgot to run script for commands)
+  414  pwd
+  415  id
+  416  ls /proc/ |grep mem
+  417  ls /proc/ | grep cpu
+  418  head /proc/meminfo
+  419  head /proc/cpuinfo
+  420  tail /proc/cpuinfo
+  421  cat /proc/cpuinfo
+  422  cat /etc/*release
+  423  script ws2.txt
+  424  ls
+  425  cat ws2.txt
+  426  rm ws2.txt
+  427  ls
+  428  script ws2.txt
+  429  ls
+  430  cat ws2.txt
+  431  ls
+  432  ws2.txt
+  433  vim ws2.txt
+  434  ls
+  435  rm ws2.txt
+  436  ls
+  437  script ws2.txt
+  438  ls ws2.txt 
+  439  vim ws2.txt 
+  440  history > cmds.log
+
+End of commands
