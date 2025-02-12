@@ -1,0 +1,34 @@
+Script started on 2025-02-12 05:44:35+00:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="95" LINES="53"]
+
+START OF SCRIPT
+
+1. I use head -5 of the csv to find the column where pick up location id is at (column 8)
+
+booce_derpinson@instance-20250129-205434: ~/cs131/ws3 head -5 2019-01-h1.csv
+
+2. grep filters out the rows where the dates are 2019-01-02 and 2019-1-10
+   cut -d',' -f 8 extracts the pickup location ids, separating at the commons to get the ids
+   sort will sort the IDS in ascending order
+   uniq -c gets rid of the duplicate lines
+   sort -nr will sort the output so that it's in descending order so the most popular pickup
+   locations are at the top
+   head -3 will extract the top 3 most common pickup locations 
+
+for 2019-01-10
+
+booce_derpinson@instance-20250129-205434: ~/cs131/ws3 grep '2019-01-10' 2019-01-h1.csv | cut -d ',' -f 8 | sort | uniq -c | sort -nr | head -3
+   8605 161.0
+   8407 132.0
+   8163 186.0
+
+for 2019-01-02
+
+booce_derpinson@instance-20250129-205434: ~/cs131/ws3 grep '2019-01-02' 2019-01-h1.csv | cut -d ',' -f 8 | sort | uniq -c | sort -nr | head -3 
+  13738 237.0
+  13519 236.0
+  12997 161.0
+
+END OF SCRIPT 
+booce_derpinson@instance-20250129-205434: ~/cs131/ws3 $ exit
+
+Script done on 2025-02-12 05:45:02+00:00 [COMMAND_EXIT_CODE="0"]

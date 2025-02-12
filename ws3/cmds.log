@@ -1,0 +1,17 @@
+  491  apt install python3-pip
+  492  sudo apt install python3-pip
+  499  sudo apt update
+  500  sudo apt install python3-pip
+  502  pip install gdown
+  508  /home/booce_derpinson/.local/bin/gdown 1fc3saVu2GtG3Rft3zI-VOOsZhaqcSyn3
+  545  head -5 2019-01-h1.csv 
+  546  grep '2019-01-02' 2019-01-h1.csv | cut -d "," -f 8 | sort | uniq -c | sort -nr | head -3
+  547  grep '2019-01-10' 2019-01-h1.csv | cut -d "," -f 8 | sort | uniq -c | sort -nr | head -3
+  611  ls
+  613  script ws3.txt
+  614  vim ws3.txt 
+  615  ls
+  617  history > cmds.log
+  
+  After editing cmds.log
+  618  rm -r 2019-01-h1.csv
