@@ -1,0 +1,33 @@
+1a.
+alias "l" for "ls -ltr"
+2019-01-h1.csv  FARE/  a1.txt  cmds.log
+
+1b.
+alis "w" for "ls -l | wc"
+06:03:29 up  2:10,  1 user,  load average: 0.01, 0.02, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+booce_de pts/0    35.235.240.145   04:52    1.00s  0.95s  0.00s w
+
+2c. 
+The mean of 151-239.txt
+6.64
+
+The mean of 163-229.txt
+7.05
+
+2d.
+The highest total amount on January 10, 2019
+36090.3
+
+2e.
+10 most popular dropoff locations with three or more customers
+ 137960 236.0
+ 119543 237.0
+ 114422 161.0
+  96663 170.0
+  92935 230.0
+  90666 162.0
+  85884 142.0
+  85118 48.0
+  84413 239.0
+  83480 141.0

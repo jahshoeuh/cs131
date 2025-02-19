@@ -1,0 +1,40 @@
+  686  cd cs131/
+  687  mkdir a1
+  688  cd a1/
+  689  mkdir FARE
+  691  nano ~/.bashrc
+  692  l
+  693  w
+  697  l >> a1.txt
+  698  w >> a1.txt
+  699  ls
+  700  vim a1.txt 
+  701  gdown 1fc3saVu2GtG3Rft3zI-VOOsZhaqcSyn3
+  846  head -n 10 2019-01-h1.csv 
+  868  cut -d',' -f11 151-239.txt | paste -sd+ - | bc > a1.txt 
+  885  touch FARE/151-239.txt
+  907  SUM=$(cut -d',' -f11 151-239.txt | paste -sd+ - | bc)
+  910  COUNT=$(wc -l < 151-239.txt)
+  919  echo "scale=2; $SUM / $COUNT" | bc > a1.txt
+  920  ls
+  921  vim a1.txt
+  926  SUM=$(cut -d',' -f11 163-229.txt | paste -sd+ - | bc)
+  928  COUNT=$(wc -l < 163-229.txt)
+  937  echo "scale=2; $SUM / $COUNT" | bc >> a1.txt
+  939  cat a1.txt 
+  940  vim a1.txt 
+  941  cd FARE
+  943  SUM=$(cut -d',' -f11 151-239.txt | paste -sd+ - | bc)
+  944  COUNT=$(wc -l < 151-239.txt)
+  949  echo "scale=2; $SUM / $COUNT" | bc >> a1.txt
+  950  cat a1.txt 
+  955  vim a1.txt 
+  960  cat a1.txt 
+  962  cat a1.txt 
+  963  vim a1.txt 
+  966  cat a1.txt 
+  970  cut -d',' -f4 2019-01-h1.csv | sort | uniq -c
+  972  grep -E ',[3-9](\.[0-9]+)?,' 2019-01-h1.csv | cut -d',' -f9 | sort | uniq -c | sort -nr | head -n 10 >> a1.txt 
+  973  cat a1.txt 
+  974  vim a1.txt 
+  975  history > cmds.log
