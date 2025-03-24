@@ -1,0 +1,20 @@
+ 1661  cd cs131
+ 1662  cd ws56/
+ 1673  sed '/,2\.0,/!d' 2019-1-h1.csv > vendor2.csv
+ 1674  wc vendor2.csv > ws56.txt
+ 1677  ls
+ 1689  sed 's/[:\"-]//g' 2019-1-h1.csv > no-separators.csv
+ 1691  head -10 no-separators.csv >> ws56.txt 
+ 1692  cat ws56.txt 
+ 1709  sed 's/\.[0-9]*//g' no-separators.csv > no-fractions.csv
+ 1711  head -10 no-fractions.csv >> ws56.txt 
+ 1712  cat ws56.txt 
+ 1713  vim ws56.txt
+ 1722  head no-fractions.csv 
+ 1723  grep ",787," no-fractions.csv
+ 1725  vim ws56.txt 
+ 1726  cat ws56.txt 
+ 1741  awk -F, '$17 >= 10 {print "$" $14}' no-fractions.csv | sort -n | uniq -c | awk '{print $2, $1}' >> ws56.txt
+ 1742  cat ws56.txt
+ 1757  awk -F',' '{print "$" $14}' no-fractions.csv | sort | uniq -c | sort -nr | head -n 20 >> ws56.txt
+ 1762  vim ws56.txt 
