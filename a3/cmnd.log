@@ -1,0 +1,10 @@
+ 1729  cd cs131
+ 1731  mkdir a3
+ 1732  cd a3
+ 1733  vim grader.csv
+ 1734  vim grader.awk
+ 1735  awk -f grader.awk grade.csv
+ 1753  vim grader.awk
+ 1754  awk -f grader.awk grades.csv
+ 1755  awk -f grader.awk grades.csv > a3.txt 
+ 1756  history > cmnd.log
